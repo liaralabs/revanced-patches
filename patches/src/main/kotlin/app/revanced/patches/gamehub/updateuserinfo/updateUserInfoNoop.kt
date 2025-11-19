@@ -1,4 +1,4 @@
-package app.revanced.patches.gamehub.gamedetailactivity
+package app.revanced.patches.gamehub.updateuserinfo
 
 import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
@@ -7,21 +7,22 @@ import app.revanced.patcher.fingerprint
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Suppress("unused")
-val fixGameDetailActivity = bytecodePatch(
-    name = "Fix NumberFormatException in GameDetailActivity",
+val nonNullMobileInfo = bytecodePatch(
+    name = "Bypass non-nullable checks in updateUserInfo",
 ) {
     compatibleWith("com.xiaoji.egggame")
 
     execute {
-        //println("Matched method: ${GameDetailActivityFingerprint.method.name} in ${GameDetailActivityFingerprint.classDef.type}")
-        GameDetailActivityFingerprint.method.apply {
-            val index = GameDetailActivityFingerprint.patternMatch!!.startIndex + 5
-            val register = getInstruction<OneRegisterInstruction>(index).registerA
+        println("Matched method: ${updateUserInfoFingerprint.method.name} in ${updateUserInfoFingerprint.classDef.type}")
+        updateUserInfoFingerprint.method.apply {
+            val index = updateUserInfoFingerprint.patternMatch!!.endIndex
+            //val register = getInstruction<OneRegisterInstruction>(index).registerA
             //println("${index}, ${register}")
             replaceInstruction(
                 index, 
                 """
-                    const-string v$register, "0"
+                    nop
+                    nop
                 """
             )
         }

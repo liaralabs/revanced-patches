@@ -5,9 +5,9 @@ import org.w3c.dom.Element
 
 @Suppress("unused")
 val gameDetailActivityPatch = resourcePatch(
-    name = "GameDetailActivity Manifest Patch",
+    name = "GameDetailActivity Manifest Export and Intent-Filter Patch",
     description = "Sets exported=true and adds intent-filter for GameDetailActivity",
-    use = false,
+    use = true,
 ) {
     execute {
         val exportedFlag = "android:exported"

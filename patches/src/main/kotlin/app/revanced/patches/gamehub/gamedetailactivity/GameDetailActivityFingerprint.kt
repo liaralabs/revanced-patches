@@ -1,17 +1,22 @@
 package app.revanced.patches.gamehub.gamedetailactivity
 
-import com.revanced.patcher.fingerprint.Fingerprint
-import com.revanced.patcher.fingerprint.MethodFingerprint
-import com.revanced.patcher.fingerprint.match.Match
-import com.revanced.patcher.fingerprint.method.impl.MethodFingerprintImpl
-import com.revanced.patcher.data.Opcode
+import app.revanced.patcher.fingerprint
+import com.android.tools.smali.dexlib2.Opcode
 
-object GameDetailActivityFingerprint : Fingerprint(
-    name = "GameDetailActivityFingerprintFingerprint",
-    strings = listOf("type", ""),   // matches both const-string literals
-    opcodeSequence = listOf(
-        Opcode.CONST_STRING,        // v7, "type"
-        Opcode.CONST_STRING,        // v8, ""
-        Opcode.INVOKE_VIRTUAL       // BaseBundle->getString()
+internal val GameDetailActivityFingerprint = fingerprint {
+    returns("V")
+    opcodes(
+        Opcode.CONST_STRING,     // "id"
+        Opcode.CONST_STRING,     // "0"
+        Opcode.INVOKE_VIRTUAL,   // getString(String, String)
+        Opcode.MOVE_RESULT_OBJECT, // move-result-object v10
+
+        Opcode.CONST_STRING,     // "type"
+        Opcode.CONST_STRING,     // ""
+        Opcode.INVOKE_VIRTUAL,   // getString(String, String)
+        Opcode.MOVE_RESULT_OBJECT  // move-result-object v7
     )
-)
+    custom { method, _ ->
+        method.name == "initView" && method.definingClass == "Lcom/xj/landscape/launcher/ui/gamedetail/GameDetailActivity;"
+    }
+}
