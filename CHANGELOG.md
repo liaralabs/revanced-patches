@@ -1,3 +1,10 @@
+# 1.0.0 (2025-11-19)
+
+
+### Bug Fixes
+
+* **readme:** update title ([6185a56](https://github.com/liaralabs/revanced-patches/commit/6185a563c2ed06ee1adb7357ee2ef2d30e941774))
+
 ## [1.0.4](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.3...v1.0.4) (2024-11-05)
 
 ## [1.0.4-dev.2](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.4-dev.1...v1.0.4-dev.2) (2024-11-05)
