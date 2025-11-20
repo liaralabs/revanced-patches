@@ -63,7 +63,7 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/ReVanced/revanced-patches-template/release.yml)
 ![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)
 
-Template repository for ReVanced Patches.
+Repository for Gamehub ReVanced.
 
 ## ❓ About
 
