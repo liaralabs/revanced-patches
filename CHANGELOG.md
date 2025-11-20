@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/liaralabs/revanced-patches/compare/v1.0.0...v1.0.1) (2025-11-20)
+
+
+### Bug Fixes
+
+* **readme:** minor update ([b019054](https://github.com/liaralabs/revanced-patches/commit/b019054e3b5b937a174b28b27c3a00b64b77d156))
+
 # 1.0.0 (2025-11-19)
 
 
