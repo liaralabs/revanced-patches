@@ -1,4 +1,4 @@
-package app.revanced.patches.gamehub.gamedetailactivity
+package app.revanced.patches.gamehub.exporttofrontend
 
 import app.revanced.patcher.fingerprint
 import com.android.tools.smali.dexlib2.Opcode
