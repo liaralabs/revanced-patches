@@ -35,6 +35,6 @@ To build ReVanced Patches, you can follow the [ReVanced documentation](https://g
 Gamehub ReVanced is licensed under the GPLv3 licence.
 Please see the [license file](LICENSE) for more information.
 [tl;dr](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3) you may copy, distribute
-and modify ReVanced Patches template as long as you track changes/dates in source files.
-Any modifications to ReVanced Patches template must also be made available under the GPL,
+and modify Gamehub Revanced as long as you track changes/dates in source files.
+Any modifications to Gamehub Revanced must also be made available under the GPL,
 along with build & install instructions.
