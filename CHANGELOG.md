@@ -1,3 +1,10 @@
+# [1.1.0-dev.2](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2025-11-21)
+
+
+### Bug Fixes
+
+* ensure compatibleWith is set ([0ab06d0](https://github.com/liaralabs/revanced-patches/commit/0ab06d019e72dfc5645815275038daa067b19047))
+
 # [1.1.0-dev.1](https://github.com/liaralabs/revanced-patches/compare/v1.0.1...v1.1.0-dev.1) (2025-11-21)
 
 
