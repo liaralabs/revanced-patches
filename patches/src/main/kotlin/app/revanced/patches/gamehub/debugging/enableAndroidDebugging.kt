@@ -8,8 +8,8 @@ val enableAndroidDebuggingPatch = resourcePatch(
     description = "Enables Android debugging capabilities. This can slow down the app. Allows access to app data.",
     use = false,
 ) {
+    compatibleWith("com.xiaoji.egggame")
     execute {
-        compatibleWith("com.xiaoji.egggame")
         document("AndroidManifest.xml").use { document ->
             val applicationNode =
                 document

@@ -12,7 +12,6 @@ val fixEmailLogin = bytecodePatch(
     use = false
 ) {
     compatibleWith("com.xiaoji.egggame")
-
     execute {
         //println("Matched method: ${updateUserInfoFingerprint.method.name} in ${updateUserInfoFingerprint.classDef.type}")
         updateUserInfoFingerprint.method.apply {
