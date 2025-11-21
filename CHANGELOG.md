@@ -1,3 +1,10 @@
+# [1.1.0-dev.4](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.3...v1.1.0-dev.4) (2025-11-21)
+
+
+### Bug Fixes
+
+* **exportToFrontend:** simplify intent filter prefix ([e7dce96](https://github.com/liaralabs/revanced-patches/commit/e7dce966c7d984ea4270d747ddc7e517f09916f5))
+
 # [1.1.0-dev.3](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.2...v1.1.0-dev.3) (2025-11-21)
 
 
