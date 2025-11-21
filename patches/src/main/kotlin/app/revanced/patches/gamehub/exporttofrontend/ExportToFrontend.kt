@@ -12,6 +12,7 @@ val frontEndExportPatch = bytecodePatch(
     use = true,
 ) {
     execute {
+        compatibleWith("com.xiaoji.egggame")
         dependsOn(manifestExportGameDetailActivity)
         // patch gameDetailActivity to avoid NumberFormatException
         //println("Matched method: ${GameDetailActivityFingerprint.method.name} in ${GameDetailActivityFingerprint.classDef.type}")

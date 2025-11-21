@@ -9,6 +9,7 @@ val enableAndroidDebuggingPatch = resourcePatch(
     use = false,
 ) {
     execute {
+        compatibleWith("com.xiaoji.egggame")
         document("AndroidManifest.xml").use { document ->
             val applicationNode =
                 document
