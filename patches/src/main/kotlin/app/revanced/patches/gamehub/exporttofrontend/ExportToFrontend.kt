@@ -6,13 +6,13 @@ import app.revanced.patcher.patch.bytecodePatch
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Suppress("unused")
-val gameDetailActivityPatch = bytecodePatch(
+val frontEndExportPatch = bytecodePatch(
     name = "Front-end Export",
     description = "Sets exported=true and adds intent-filter for GameDetailActivity, patches gameDetailActivity to avoid NumberFormatException",
     use = true,
 ) {
     execute {
-        dependsOn(manifestExport)
+        dependsOn(manifestExportGameDetailActivity)
         // patch gameDetailActivity to avoid NumberFormatException
         //println("Matched method: ${GameDetailActivityFingerprint.method.name} in ${GameDetailActivityFingerprint.classDef.type}")
         GameDetailActivityFingerprint.method.apply {

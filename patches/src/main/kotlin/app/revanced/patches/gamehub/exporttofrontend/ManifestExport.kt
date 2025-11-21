@@ -3,7 +3,7 @@ package app.revanced.patches.gamehub.exporttofrontend
 import app.revanced.patcher.patch.resourcePatch
 import org.w3c.dom.Element
 
-val manifestExport = resourcePatch {
+val manifestExportGameDetailActivity = resourcePatch {
     execute {
         // Export GameDetailActivity and add intent-filter
         val exportedFlag = "android:exported"
