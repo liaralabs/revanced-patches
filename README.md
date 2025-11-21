@@ -13,7 +13,7 @@ Patches currently include:
 - Enable debug mode (for app data access)
 - Fix email logins (a new bug introduced in 5.3)
 
-Has been tested against 5.3.2
+Has been tested against 5.3.3
 
 ## Get started
 
