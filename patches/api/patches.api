@@ -1,9 +1,13 @@
+public final class app/revanced/patches/gamehub/debugging/EnableAndroidDebuggingKt {
+	public static final fun getEnableAndroidDebuggingPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
 public final class app/revanced/patches/gamehub/exporttofrontend/ExportToFrontendKt {
-	public static final fun getGameDetailActivityPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+	public static final fun getFrontEndExportPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/gamehub/exporttofrontend/ManifestExportKt {
-	public static final fun getManifestExport ()Lapp/revanced/patcher/patch/ResourcePatch;
+	public static final fun getManifestExportGameDetailActivity ()Lapp/revanced/patcher/patch/ResourcePatch;
 }
 
 public final class app/revanced/patches/gamehub/fixemaillogin/FixEmailLoginKt {
