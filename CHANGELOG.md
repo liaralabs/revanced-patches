@@ -1,3 +1,10 @@
+# [1.1.0-dev.3](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.2...v1.1.0-dev.3) (2025-11-21)
+
+
+### Bug Fixes
+
+* **readme:** tested versions ([6b0444d](https://github.com/liaralabs/revanced-patches/commit/6b0444d6a3441a029653d82565d421f75c4eca2f))
+
 # [1.1.0-dev.2](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2025-11-21)
 
 
