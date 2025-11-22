@@ -1,3 +1,10 @@
+# [1.1.0-dev.6](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.5...v1.1.0-dev.6) (2025-11-22)
+
+
+### Bug Fixes
+
+* **exportToFrontend:** put dependsOn in the correct place ([db20cea](https://github.com/liaralabs/revanced-patches/commit/db20ceae485758c67d0117323ee49fcc8d2a1cdb))
+
 # [1.1.0-dev.5](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.4...v1.1.0-dev.5) (2025-11-22)
 
 
