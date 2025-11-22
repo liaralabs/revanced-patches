@@ -1,3 +1,10 @@
+# [1.1.0-dev.5](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.4...v1.1.0-dev.5) (2025-11-22)
+
+
+### Bug Fixes
+
+* **exportToFrontend:** use a more appropriate activity name ([f0c7ca4](https://github.com/liaralabs/revanced-patches/commit/f0c7ca47cf8216ed5ec2e7249f601473682f3e7a))
+
 # [1.1.0-dev.4](https://github.com/liaralabs/revanced-patches/compare/v1.1.0-dev.3...v1.1.0-dev.4) (2025-11-21)
 
 
