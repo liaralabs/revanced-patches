@@ -1,15 +1,11 @@
-package app.revanced.patches.gamehub.export
+package app.revanced.patches.gamehub.exporttofrontend
 
 import app.revanced.patcher.patch.resourcePatch
 import org.w3c.dom.Element
 
-@Suppress("unused")
-val gameDetailActivityPatch = resourcePatch(
-    name = "GameDetailActivity Manifest Export and Intent-Filter Patch",
-    description = "Sets exported=true and adds intent-filter for GameDetailActivity",
-    use = true,
-) {
+val manifestExportGameDetailActivity = resourcePatch {
     execute {
+        // Export GameDetailActivity and add intent-filter
         val exportedFlag = "android:exported"
         val targetActivityName = "com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity"
 
@@ -38,7 +34,7 @@ val gameDetailActivityPatch = resourcePatch(
                 val intentFilter = document.createElement("intent-filter")
 
                 val action = document.createElement("action")
-                action.setAttribute("android:name", "gamehub.lite.LAUNCH_GAME")
+                action.setAttribute("android:name", "com.gamehub.LAUNCH_GAME")
                 intentFilter.appendChild(action)
 
                 val category = document.createElement("category")

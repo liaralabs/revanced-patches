@@ -1,4 +1,4 @@
-package app.revanced.patches.gamehub.updateuserinfo
+package app.revanced.patches.gamehub.fixemaillogin
 
 import app.revanced.patcher.fingerprint
 import com.android.tools.smali.dexlib2.Opcode
@@ -17,5 +17,16 @@ internal val updateUserInfoFingerprint = fingerprint {
     )
     custom { method, _ ->
         method.name == "updateUserInfo" && method.definingClass == "Lcom/xj/common/user/UserManager;"
+    }
+}
+
+internal val setMobileFingerprint = fingerprint {
+    returns("V")
+    opcodes(
+        Opcode.CONST_STRING,     // "value"
+        Opcode.INVOKE_STATIC
+    )
+    custom { method, _ ->
+        method.name == "setMobile" && method.definingClass == "Lcom/xj/common/user/UserManager;"
     }
 }
