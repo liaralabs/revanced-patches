@@ -34,7 +34,7 @@ val manifestExportGameDetailActivity = resourcePatch {
                 val intentFilter = document.createElement("intent-filter")
 
                 val action = document.createElement("action")
-                action.setAttribute("android:name", "LAUNCH_GAME")
+                action.setAttribute("android:name", "com.gamehub.LAUNCH_GAME")
                 intentFilter.appendChild(action)
 
                 val category = document.createElement("category")
