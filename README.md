@@ -24,6 +24,18 @@ Has been tested against 5.3.3
 
 Please note, there are currently no guardrails on patch version compatibility. These patches are intended to be used against the latest available version of GameHub.
 
+### Front-end Compatibility
+
+You can launch games directly from a compatible front-end. For example, with Beacon:
+
+```bash
+am start -n com.xiaoji.egggame/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity -a com.gamehub.LAUNCH_GAME --es localGameId {file_content} --es steamAppId {file_content} --ez autoStartGame true
+```
+
+Note:
+- The unaltered package name (`com.xiaoji.egggame`)
+- The activity name (`com.gamehub.LAUNCH_GAME`)
+
 ## Everything else
 
 ### 🛠️ Building
